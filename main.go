@@ -119,6 +119,7 @@ func main() {
 		log.Println("post success")
 	})
 
+	log.Println("Starting...")
 	s.StartBlocking()
 }
 
