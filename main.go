@@ -104,6 +104,8 @@ func main() {
 			FollowersCountDiff: newData.Followers - data.Followers,
 		}
 
+		data = newData
+
 		buf := new(bytes.Buffer)
 
 		if err := tmpl.Execute(buf, param); err != nil {
